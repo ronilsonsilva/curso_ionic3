@@ -1,0 +1,22 @@
+
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Modal</ion-title>
+      </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-item >
+    <button ion-button full (click)="abrirModalBasico()" disabled>Abrir Modal Básico</button>
+  </ion-item>
+  <ion-item >
+    <button ion-button full (click)="abrirModalComParametro()">Abrir Modal Com Parâmetro</button>
+  </ion-item>
+  <ion-item >
+    <button ion-button full (click)="abrirModalSemParametro()">Abrir Modal Sem Parâmetro</button>
+  </ion-item>
+</ion-content>

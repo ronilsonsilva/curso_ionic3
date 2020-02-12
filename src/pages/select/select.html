@@ -1,0 +1,76 @@
+<!--
+  Generated template for the SelectPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Select</ion-title>
+      </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list >
+    <ion-item>
+      <ion-label>Frutas</ion-label>
+      <ion-select>
+        <ion-option value="Abacaxi" >Abacaxi</ion-option>
+        <ion-option value="Maçã">Maçã</ion-option>
+        <ion-option value="Mamão">Mamão</ion-option>
+        <ion-option value="Laranja">Laranja</ion-option>    
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label>Várias Frutas</ion-label>
+      <ion-select multiple="true" cancelText="Cancelar" okText="Selecionar">
+          <ion-option value="Abacaxi" >Abacaxi</ion-option>
+          <ion-option value="Maçã">Maçã</ion-option>
+          <ion-option value="Mamão">Mamão</ion-option>
+          <ion-option value="Laranja">Laranja</ion-option>    
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label>Várias Frutas</ion-label>
+      <ion-select multiple="true" disabled cancelText="Cancelar" okText="Selecionar">
+          <ion-option value="Abacaxi" >Abacaxi</ion-option>
+          <ion-option value="Maçã">Maçã</ion-option>
+          <ion-option value="Mamão">Mamão</ion-option>
+          <ion-option value="Laranja">Laranja</ion-option>    
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label>Várias Frutas</ion-label>
+      <ion-select multiple="true" [selectOptions]="selectOptions" cancelText="Cancelar" okText="Selecionar">
+          <ion-option value="Abacaxi" >Abacaxi</ion-option>
+          <ion-option value="Maçã">Maçã</ion-option>
+          <ion-option value="Mamão">Mamão</ion-option>
+          <ion-option value="Laranja">Laranja</ion-option>    
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label>Action Sheet</ion-label>
+      <ion-select interface="action-sheet">
+        <ion-option value="Pastel" >Pastel</ion-option>
+        <ion-option value="Coxinha" >Coxinha</ion-option>
+        <ion-option value="Empada" >Empada</ion-option>
+        <ion-option value="Salsicha" >Salsicha</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Popover</ion-label>
+      <ion-select  interface="popover">
+          <ion-option value="Pastel" >Pastel</ion-option>
+          <ion-option value="Coxinha" >Coxinha</ion-option>
+          <ion-option value="Empada" >Empada</ion-option>
+          <ion-option value="Salsicha" >Salsicha</ion-option>
+      </ion-select>
+    </ion-item>
+    
+  </ion-list>
+</ion-content>
